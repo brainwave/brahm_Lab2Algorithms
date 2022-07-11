@@ -16,7 +16,7 @@ public class Main {
 			}
 			DenominationFinder df = new DenominationFinder(numDenominations);
 
-			System.out.println("Enter the denomination value: ");
+			System.out.println("Enter the denomination values: ");
 			for (int i = 0; i < numDenominations; i++)
 				df.recordDenomination(sc.nextInt());
 
