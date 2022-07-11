@@ -22,7 +22,7 @@ public class Main {
 			for (int i = 0; i < numTransactions; i++)
 				transactions.recordTransaction(sc.nextInt());
 
-			System.out.printf("Enter the number of targets to be checked: ");
+			System.out.printf("Enter the number of targets to be checked: \n");
 			int numTargets = sc.nextInt();
 			if (numTargets < 1) {
 				throw new ArithmeticException("number of targets should be a natural number");
@@ -32,6 +32,9 @@ public class Main {
 				System.out.println("Enter value of the target");
 				transactions.checkTarget(sc.nextInt());
 			}
+
+			System.out.println("Exiting");
+
 		} catch (ArithmeticException e) {
 			System.out.println(e.getMessage() + ". Please try again");
 		} catch (InputMismatchException e) {
