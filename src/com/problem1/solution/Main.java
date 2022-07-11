@@ -1,9 +1,7 @@
-package com.main;
+package com.problem1.solution;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
-import com.transactions.Transactions;
 
 public class Main {
 	public static void main(String argv[]) {
@@ -18,11 +16,11 @@ public class Main {
 			}
 			Transactions transactions = new Transactions(numTransactions);
 
-			System.out.println("Enter values in the array");
+			System.out.println("Enter values in the array: ");
 			for (int i = 0; i < numTransactions; i++)
 				transactions.recordTransaction(sc.nextInt());
 
-			System.out.printf("Enter the number of targets to be checked: \n");
+			System.out.printf("Enter the number of targets to be checked: ");
 			int numTargets = sc.nextInt();
 			if (numTargets < 1) {
 				throw new ArithmeticException("number of targets should be a natural number");

@@ -1,4 +1,4 @@
-package com.transactions;
+package com.problem1.solution;
 
 public class Transactions {
 
